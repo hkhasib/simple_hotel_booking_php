@@ -1,0 +1,389 @@
+* {
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f8ff;
+    font-size: 20px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #510747;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #26032b;
+}
+
+.openbtn:active{
+    background-color: #510747;
+}
+
+
+.topnav {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #510747;
+    transition: margin-left .5s;
+    z-index: 2;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #08346D;
+}
+.topnav a.logo {
+    font-size: 18px;
+    font-weight: 700
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.navbar-right {
+    float: right
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+#main {
+    margin-left: 250px;
+    transition: margin-left .5s;
+    padding: 16px;
+
+}
+@media screen and (max-width: 700px) {
+    #main {
+        margin-left: 0;
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+}
+
+.sidebar {
+    z-index: 1;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#F1F5F9,#FFFFFF);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-size: 20px;
+
+}
+
+
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    margin-top:10px;
+
+}
+
+.sidebar a:hover {
+    background-color: #ccc;
+}
+.sidebar a:active {
+    background-color: #015ACD;
+    color: #fff
+}
+.sidebar a.active {
+    background-color: #2A5083;
+    color: #fff
+}
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 0;
+    }
+}
+
+
+.table1 {
+    font-family: trebuchet ms,Arial,Helvetica,sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    overflow-x: auto;
+    word-wrap: break-word;
+    font-size: 16px
+}
+
+.table1 td,#table1 th {
+    border: 1px solid #ddd;
+    padding: 8px
+}
+
+.table1 tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.table1 tr:hover {
+    background-color: #ddd
+}
+
+.table1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #483d8b;
+    color: #fff
+}
+
+.roundbox-medium {
+    background-color: lightgrey;
+    width: 30%;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.roundbox1 {
+    align-content: center;
+    text-align: center;
+    border-radius: 25px;
+    background: #fff;
+    padding: 20px;
+    top: 50%;
+    left: 50%
+}
+
+
+.roundbox2 {
+    border-radius: 25px;
+    background: #fff;
+    padding: 20px;
+    top: 50%;
+    left: 50%
+}
+
+
+.dropshadow1 {
+    box-shadow: 1px 2px 4px #888888;
+}
+.navshadow {
+    box-shadow: 2px 4px 8px #888888;
+}
+.bookButton {
+    background-color: #630655;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 50%
+}
+.bookButton a{
+
+    color: #fff;
+}
+.bookButton:hover {
+    background-color: #ba069e;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+}
+
+.bookButton:active {
+    border: none;
+    background-color: #61046d;
+    overflow: hidden;
+    outline: none;
+}
+.button1 {
+    background-color: #094592;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 20%
+}
+
+.button1:hover {
+    background-color: #096092;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+}
+
+.button1:active {
+    border: none;
+    background-color: #390992;
+    overflow: hidden;
+    outline: none;
+}
+.deletebutton {
+    background-color: #990820;
+    border: none;
+    color: #fff;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 80%
+}
+
+.deletebutton:hover {
+    background-color: #c60247;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+}
+
+.deletebutton:active {
+    border: none;
+    background-color: #390992;
+    overflow: hidden;
+    outline: none;
+}
+
+.regbutton {
+    background-color: #990820;
+    border: none;
+    color: #fff;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 20%
+}
+
+.regbutton:hover {
+    background-color: #c60247;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+}
+
+.regbutton:active {
+    border: none;
+    background-color: #390992;
+    overflow: hidden;
+    outline: none;
+}
+input[type="button"]
+{
+    outline:none;
+}
+
+input,select {
+    margin: 20px;
+    width: 60%;
+    font-size: 20px;
+    border:none;
+    border-bottom:1px solid #ccc;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 700px) {
+    .button1 {
+        font-size: 12px;
+        text-align: center;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .button1 {
+        font-size: 12px;
+        text-align: center;
+        width: 40%;
+
+    }
+}
+
+.auto-cursor{
+    cursor: auto;
+}
+.textinput {
+    float: left;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+    max-width: 820px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+.displaybox{
+    display: inline-block;
+    position: relative;
+    margin: 1%;
+    width: 30%;
+    align-content: center;
+    text-align: center;
+    border-radius: 25px;
+    background: #fff;
+    padding: 10px;
+}
+.displaybox img{
+    max-width: 90%;
+}
